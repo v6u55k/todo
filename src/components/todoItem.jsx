@@ -9,10 +9,19 @@ function TodoItem({ todo, deleteTodo, toggleTodo }) {
         {todo.text}
       </span>
 
-      <button onClick={() => toggleTodo(todo.id)}>✔</button>
-      <button onClick={() => deleteTodo(todo.id)}>❌</button>
+      <button
+        onClick={() => toggleTodo(todo.id)}
+        style={{ backgroundColor: "#4CAF50", color: "white" }}
+      >✔</button>
+      
+      <button
+        onClick={() => deleteTodo(todo.id)}
+        style={{ backgroundColor: "#f44336", color: "white" }}
+      >❌</button>
     </div>
   );
 }
+
+
 
 export default TodoItem;

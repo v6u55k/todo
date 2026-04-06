@@ -45,7 +45,9 @@ function App() {
         placeholder="Введите задачу..."
       />
 
-      <button onClick={addTodo}>Добавить</button>
+      <button style={{ backgroundColor: "#2196F3", color: "white" }} onClick={addTodo}>
+        Добавить
+      </button>
 
       <TodoList
         todos={todos}
